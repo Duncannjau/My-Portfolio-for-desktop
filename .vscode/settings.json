@@ -1,0 +1,7 @@
+{
+  "json.format.enable": false,
+  "json.schemas": [
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  ]
+}
