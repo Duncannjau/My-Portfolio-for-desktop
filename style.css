@@ -9,11 +9,12 @@ body {
   margin: 0;
   padding: 0;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 .overflow {
   max-width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .pd-0 {
@@ -43,7 +44,7 @@ body {
   border-bottom-left-radius: 100px;
 }
 
-#navigation-bar {
+#toolbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -67,56 +68,85 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding: 102px 24px 100px;
-  gap: 4px;
+  gap: 12px;
 }
 
 .order-0 {
+  /* Inside auto layout */
+
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .order-1 {
+  /* Inside auto layout */
+
   flex: none;
   order: 1;
   flex-grow: 0;
 }
 
 .order-2 {
+  /* Inside auto layout */
+
   flex: none;
   order: 2;
   flex-grow: 0;
 }
 
 .order-3 {
+  /* Inside auto layout */
+
   flex: none;
   order: 3;
   flex-grow: 0;
 }
 
 .txt-1 {
+  /* Header / 2 */
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+
+  /* or 130% */
+
+  /* Neutrals/N800 */
+
   color: #172b4d;
 }
 
 .txt-2 {
+  /* Body / 2 */
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+
+  /* or 150% */
+
+  /* Neutrals/N600 */
+
   color: #344563;
 }
 
 .txt-3 {
+  /* Body / 2 - Bolder */
+
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+
+  /* identical to box height, or 150% */
+
+  /* Primary/B300 */
+
+  color: #1f31ff;
+
+  /* Inside auto layout */
 }
 
 .txt-4 {
@@ -124,6 +154,11 @@ body {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+
+  /* or 138% */
+
+  /* Neutrals/N800 */
+
   color: #172b4d;
 }
 
@@ -132,6 +167,11 @@ body {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
+
+  /* identical to box height, or 123% */
+
+  /* Neutrals/N600 */
+
   color: #344563;
 }
 
@@ -140,6 +180,11 @@ body {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
+
+  /* identical to box height, or 123% */
+
+  /* Neutrals/N100 */
+
   color: #7a869a;
 }
 
@@ -148,6 +193,11 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
+
+  /* or 160% */
+
+  /* Neutrals/N600 */
+
   color: #344563;
 }
 
@@ -156,14 +206,27 @@ body {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
+
+  /* identical to box height, or 133% */
+
+  /* Tag */
+
+  /* Auto layout */
+
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 4px 12px;
+
+  /* Primary/B50 */
+
   background: #ebebff;
   border-radius: 8px;
   letter-spacing: 0.03em;
-  color: #6070ff;
+
+  /* Primary/B400 */
+
+  color: #0018f5;
 }
 
 .skill-txt {
@@ -171,6 +234,9 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+
+  /* identical to box height, or 120% */
+
   display: flex;
   align-items: center;
   color: #000;
@@ -204,19 +270,34 @@ body {
 }
 
 .card {
+  /* Card Works */
+
   box-sizing: border-box;
+
+  /* Auto layout */
+
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 16px;
   margin: 0 24px;
   gap: 12px;
+
+  /* Neutrals/N0 */
+
   background: #fff;
+
+  /* Neutrals/N40 */
+
   border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
 
 .primary-txt {
+  /* Primary Text */
+
+  /* Auto layout */
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -246,49 +327,89 @@ body {
 }
 
 .mobile-btn {
+  /* Button / Enable */
+
   box-sizing: border-box;
+
+  /* Auto layout */
+
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px;
   gap: 10px;
+
+  /* Theme 1 / Neutrals 11 */
+
   background: #fff;
+
+  /* Theme 1 / Primary Colors 3 */
+
   border: 1px solid #7f8cff;
   border-radius: 8px;
 }
 
 .mobile-btn:hover {
+  /* Button / Hover */
+
+  /* Auto layout */
+
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px;
   gap: 10px;
+
+  /* Theme 1 / Primary Colors 2 */
+
   background: #6070ff;
+
+  /* Button/1 */
+
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+
+  /* identical to box height, or 141% */
+
   text-align: center;
   letter-spacing: 0.03em;
+
+  /* Theme 1 / Neutrals 11 */
+
   color: #fff;
 }
 
 .mobile-btn:focus {
+  /* Button / Pressed */
+
+  /* Auto layout */
+
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px;
   gap: 10px;
+
+  /* Theme 1 / Primary Colors 1 */
+
   background: #2230d2;
   border-radius: 8px;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+
+  /* identical to box height, or 141% */
+
   text-align: center;
   letter-spacing: 0.03em;
+
+  /* Theme 1 / Neutrals 11 */
+
   color: #fff;
 }
 
@@ -297,14 +418,24 @@ body {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+
+  /* identical to box height, or 141% */
+
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
+
+  /* Primary/B500 */
+
   color: #396df2;
 }
 
 .about {
+  /* About My Self */
+
+  /* Auto layout */
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -314,6 +445,10 @@ body {
 }
 
 .top {
+  /* TOP */
+
+  /* Auto layout */
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -322,6 +457,10 @@ body {
 }
 
 .skill {
+  /* Skill List */
+
+  /* Auto layout */
+
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -341,6 +480,10 @@ body {
 }
 
 .lng-list {
+  /* Langguage List */
+
+  /* Auto layout */
+
   display: flex;
   flex-direction: column;
   padding: 12px 12px;
@@ -348,6 +491,7 @@ body {
 }
 
 .frame-9 {
+  /* Neutrals/N10 */
   display: flex;
   background: #f7f7f9;
   border-radius: 8px;
@@ -361,6 +505,9 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+
+  /* Neutrals/N40 */
+
   background: #dfe1e6;
 }
 
@@ -390,15 +537,23 @@ body {
 }
 
 .contact-me-title {
+  /* Header / 2 */
+
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+
+  /* or 130% */
+
   display: flex;
   align-items: center;
   text-align: center;
   margin: 0;
+
+  /* Neutrals/N0 */
+
   color: #fff;
 }
 
@@ -408,8 +563,14 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
+
+  /* or 140% */
+
   text-align: center;
   margin: 0;
+
+  /* Primary/B50 */
+
   color: #ebebff;
 }
 
@@ -422,7 +583,14 @@ body {
 }
 
 .input {
+  /* Mono/White */
+
+  /* Mono/White */
+
   background: #fff;
+
+  /* Base/100 */
+
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   width: inherit;
@@ -431,9 +599,15 @@ body {
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
+
+  /* or 118% */
+
   display: flex;
   align-items: center;
   padding: 15px 36px 15px 16px;
+
+  /* Neutral/N800 */
+
   color: #172b4d;
 }
 
@@ -449,11 +623,11 @@ button {
   transition: all 0.5s ease-in;
 }
 
-#logo {
+#mylogo {
   transition: all 1s ease-in;
 }
 
-#logo:hover {
+#mylogo:hover {
   transform: rotate(360deg);
 }
 
@@ -468,6 +642,64 @@ img {
 
 img:hover {
   transform: scale(1.05);
+}
+
+#overlay {
+  /* Overlay */
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  /* Theme 1 / Primary Colors 2 */
+
+  background-color: rgba(96, 112, 255);
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(6px);
+}
+
+#close-mobile-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 48px;
+  margin-right: 24px;
+}
+
+#mobile-menu-list {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0 16px 0 16px;
+  margin: 0 12px 0 12px;
+  gap: 8px;
+  z-index: 1;
+}
+
+#mobile-menu-list li {
+  /* Theme 1 / H3 */
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+
+  /* or 138% */
+
+  display: flex;
+  align-items: center;
+
+  /* Theme 1 / Neutrals 11 */
+}
+
+#mobile-menu-list li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 @keyframes slide-in {
@@ -522,7 +754,7 @@ img:hover {
     display: flex;
     flex-direction: column;
     width: -webkit-fill-available;
-    margin-top: 5px;
+    margin-top: 71px;
     margin-left: 2.55%;
     margin-right: 0.6%;
     align-items: flex-start;
@@ -535,8 +767,8 @@ img:hover {
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
-    gap: 6px;
-    margin: 10.07%  12%;
+    gap: 12px;
+    margin: 20.07%  18%;
   }
 
   .txt-1-dsktp {
@@ -544,9 +776,15 @@ img:hover {
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
+
+    /* or 125% */
+
     display: flex;
     align-items: center;
     letter-spacing: 0.37px;
+
+    /* Theme 1 / Neutrals 1 */
+
     color: #091e42;
   }
 
@@ -558,14 +796,25 @@ img:hover {
   }
 
   .card {
+    /* Card Works */
+
     box-sizing: border-box;
+
+    /* Auto layout */
+
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 24px;
     gap: 22px;
     margin: 0;
+
+    /* Neutrals/N0 */
+
     background: #fff;
+
+    /* Neutrals/N40 */
+
     border: 1px solid #dfe1e6;
     border-radius: 16px;
   }
@@ -604,10 +853,17 @@ img:hover {
   }
 
   .txt-4-dsktp {
+    /* Header / 2 */
+
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
+
+    /* or 130% */
+
+    /* Theme 1 / Neutrals 1 */
+
     color: #091e42;
   }
 
@@ -616,6 +872,11 @@ img:hover {
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
+
+    /* identical to box height, or 133% */
+
+    /* Theme 1 / Neutrals 3 */
+
     color: #344563;
   }
 
@@ -624,6 +885,11 @@ img:hover {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+
+    /* identical to box height, or 133% */
+
+    /* Theme 1 / Neutrals 6 */
+
     color: #6b778c;
   }
 
@@ -632,6 +898,11 @@ img:hover {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+
+    /* or 150% */
+
+    /* Neutrals/N600 */
+
     color: #344563;
   }
 
@@ -674,6 +945,10 @@ img:hover {
   }
 
   .skill {
+    /* Skill List */
+
+    /* Auto layout */
+
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -685,8 +960,14 @@ img:hover {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
+
+    /* or 130% */
+
     display: flex;
     align-items: center;
+
+    /* Theme 1 / Neutrals 1 */
+
     color: #091e42;
   }
 
