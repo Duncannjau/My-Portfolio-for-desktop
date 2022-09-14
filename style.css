@@ -39,12 +39,13 @@ body {
 
 #tool-bar {
   position: fixed;
-  width: 100%;
+  width: -webkit-fill-available;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 14px 24px;
   background: #fff;
+  justify-content: space-between;
 }
 
 #heading {
