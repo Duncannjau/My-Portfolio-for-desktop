@@ -38,9 +38,10 @@ body {
 }
 
 #tool-bar {
+  position: fixed;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   padding: 14px 24px;
   background: #fff;
@@ -541,6 +542,7 @@ img:hover {
     width: 77.5%;
     justify-content: space-between;
     padding: 26px 12%;
+    
   }
 
   #menu-lst {
@@ -780,4 +782,8 @@ img:hover {
   .dsktp-align {
     align-self: center;
   }
+}
+
+header {
+  position: absolute;
 }
