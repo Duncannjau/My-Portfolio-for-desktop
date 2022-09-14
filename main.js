@@ -13,4 +13,3 @@ function closeMobileMenu() {
 for (let i = 0; i < closeMenu.length; i += 1) {
   closeMenu[i].addEventListener('click', closeMobileMenu);
 }
-
