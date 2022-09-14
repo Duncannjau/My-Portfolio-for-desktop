@@ -38,12 +38,14 @@ body {
 }
 
 #tool-bar {
+  position: fixed;
+  width: -webkit-fill-available;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   padding: 14px 24px;
   background: #fff;
+  justify-content: space-between;
 }
 
 #heading {
@@ -780,4 +782,8 @@ img:hover {
   .dsktp-align {
     align-self: center;
   }
+}
+
+header {
+  position: absolute;
 }
