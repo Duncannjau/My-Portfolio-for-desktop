@@ -791,3 +791,76 @@ img:hover {
 header {
   position: absolute;
 }
+
+.dsktp-pd {
+  padding: 0 116px;
+}
+
+.dsktp-align {
+  align-self: center;
+}
+
+.popUpHide {
+  display: flex;
+}
+
+.popUpTxtBlock {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin-bottom: 70px;
+  gap: 24px;
+}
+
+.popUpBlock1 {
+  width: 69%;
+}
+
+.popUpBlock2 {
+  width: 29%;
+  margin-top: 0;
+}
+
+.popUpWorkList {
+  margin-top: 16px;
+}
+
+.popUpBlockImg {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 28px;
+  margin-bottom: 60px;
+}
+
+#popUp {
+  padding: 77px 142px;
+}
+
+.popUpTop12Bottom20 {
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.popUpSeparator {
+  display: flex;
+  flex-direction: column;
+}
+
+.popUpAction {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 5px 0 5px;
+  margin: 21px 0 0 0;
+  gap: 24px;
+}
+
+.popUpTxt {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
+}
