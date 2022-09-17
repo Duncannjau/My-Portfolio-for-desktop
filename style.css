@@ -3,6 +3,10 @@ html {
   overflow-x: hidden;
 }
 
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
 body {
   background: #f7f7f9;
   font-family: "Poppins", sans-serif;
