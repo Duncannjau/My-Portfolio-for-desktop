@@ -179,11 +179,7 @@ const emailInput = document.querySelector('#email-input');
 const nameInput = document.querySelector('#name-input');
 const textInput = document.querySelector('#message-input');
 
-const formDefault = JSON.parse(localStorage.getItem('Contact'));
-if (formDefault != null) {
-  nameInput.value = formDefault.name;
-  emailInput.value = formDefault.mail;
-  textInput.value = formDefault.message;
+
 }
 
 formCheck.addEventListener('submit', (e) => {
