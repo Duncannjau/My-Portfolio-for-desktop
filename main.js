@@ -186,7 +186,19 @@ if (formDefault != null) {
   textInput.value = formDefault.message;
 }
 
+formCheck.addEventListener('submit', (e) => {
+  const email = emailInput.value;
 
+  if (email !== email.toLowerCase()) {
+    errormsg.style.display = 'block';
+    errormsg.innerHTML = 'email must be in lower case';
+    setTimeout(() => { errormsg.style.display = 'none'; }, 2000);
+    e.preventDefault();
+    return false;
+  }
+  formCheck.submit();
+  return false;
+});
 
 formCheck.addEventListener('input', () => {
   const name = nameInput.value;
